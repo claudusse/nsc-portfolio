@@ -9,7 +9,7 @@ import { experiences } from '../../../../core/data/portfolio.data';
       <div>
         <p class="section-kicker">CV</p>
         <h2>Parcours professionnel.</h2>
-        <p class="muted">Une présentation moderne de ton CV, pensée pour les recruteurs et les décideurs.</p>
+        <p class="muted">Une présentation moderne de ton CV, pensée pour les recruteurs et les décideurs</p>
         <a class="btn btn-primary small-btn" href="assets/cv-claude-ndja.pdf" target="_blank">Télécharger mon CV</a>
       </div>
 

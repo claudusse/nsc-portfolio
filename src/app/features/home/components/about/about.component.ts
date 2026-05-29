@@ -25,7 +25,7 @@ import { Component } from '@angular/core';
           </p>
           <p>
             Mon objectif : comprendre le besoin métier, simplifier le processus et livrer une solution claire,
-            maintenable et orientée résultat.
+            maintenable et orientée résultat
           </p>
         </div>
       </div>

@@ -9,7 +9,7 @@ import { skillGroups } from '../../../../core/data/portfolio.data';
       <div class="section-heading">
         <p class="section-kicker">Compétences</p>
         <h2>Une expertise orientée solutions concrètes.</h2>
-        <p>Un socle technique complet pour créer, automatiser, connecter et visualiser les données.</p>
+        <p>Un socle technique complet pour créer, automatiser, connecter et visualiser les données</p>
       </div>
 
       <div class="skills-grid">

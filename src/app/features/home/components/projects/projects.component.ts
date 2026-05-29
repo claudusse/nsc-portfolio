@@ -12,7 +12,7 @@ import { projects } from '../../../../core/data/portfolio.data';
         <div>
           <p class="section-kicker">Réalisations</p>
           <h2>Des projets présentés comme des cas métiers.</h2>
-          <p>Chaque réalisation met en avant le contexte, la solution et la valeur apportée.</p>
+          <p>Chaque réalisation met en avant le contexte, la solution et la valeur apportée</p>
         </div>
         <a class="btn btn-secondary" routerLink="/realisations">Voir plus</a>
       </div>

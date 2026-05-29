@@ -92,7 +92,7 @@ export const projects: Project[] = [
     galleryImages: [
       'assets/images/projects/planner.png',
       'assets/images/projects/planner-2.png',
-      'assets/images/projects/planner-3.png',
+      'assets/images/projects/planner-2.png',
     ],
   },
   {
