@@ -20,7 +20,7 @@
       <button
         class="menu-toggle"
         type="button"
-        aria-label="Ouvrir le menu"
+        [attr.aria-label]="mobileMenuOpen ? 'Fermer le menu' : 'Ouvrir le menu'"
         [attr.aria-expanded]="mobileMenuOpen"
         (click)="toggleMenu()"
       >
@@ -51,3 +51,4 @@ export class NavbarComponent {
     this.mobileMenuOpen = false;
   }
 }
+
