@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { projects, Project } from '../../core/data/portfolio.data';
+import { NavbarComponent } from '../../shared/components/navbar.component';
 
 @Component({
   selector: 'app-projects-gallery',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, NavbarComponent],
   template: `
+  <app-navbar />
     <main class="gallery-page">
       <section class="gallery-hero section-shell">
         <a class="back-link" routerLink="/">Retour au portfolio</a> &nbsp;
@@ -25,7 +27,8 @@ import { projects, Project } from '../../core/data/portfolio.data';
               @if (project.image) {
                 <img [src]="project.image" [alt]="project.title" />
               }
-              <span style="background: #202ef3;">{{ project.category }}</span>
+              <!-- <span style="background: #202ef3;">{{ project.category }}</span> -->
+              <span class="eyebrow" style="background: #202ef3;">{{ project.category }}</span>
               <strong>{{ project.title }}</strong>
             </div> 
             <div class="gallery-body">

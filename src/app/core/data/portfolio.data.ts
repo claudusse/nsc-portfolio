@@ -109,22 +109,36 @@ export const projects: Project[] = [
       'assets/images/projects/PoB-3.png',
     ],
   },
+  {
+    title: 'Intranet',
+    category: 'Sharepoint',
+    description: 'Portail interne de communication et collaboration',
+    impact: 'Permettre aux agents de rester informer sur les élemnts en interne et de mieux collaborer',
+    tools: ['Sharepoint', 'Teams', 'Lists'],
+    accent: 'linear-gradient(135deg, #6d5dfc, #43d9ad)',
+    image: 'assets/images/projects/adw.png',
+    galleryImages: [
+      'assets/images/projects/adw.png',
+      'assets/images/projects/adw-2.png',
+      'assets/images/projects/adw-3.png',
+    ],
+  },
 ];
 
 export const experiences = [
   {
-    year: '2026',
+    year: 'Depuis 2025',
     title: 'Consultant Microsoft 365 / Power Platform',
     description: 'Conception de solutions digitales orientées automatisation, collaboration et reporting.',
   },
   {
-    year: '2024 - 2025',
-    title: 'Développeur Applications Métiers',
-    description: 'Développement de plateformes web, gestion de données, workflows et interfaces métiers.',
+    year: '2021 - 2024',
+    title: 'IT ANALYSTE PROGRAMMEUR - BUREAU VERITAS CI',
+    description: 'Elaboration des états d\'analyse sur Power BI, Conception des applications via Powerapps, gestion de données, Automatisation des processus metiers workflows via Power automate...',
   },
   {
-    year: 'Avant 2024',
-    title: 'Support IT & Digitalisation',
-    description: 'Accompagnement des utilisateurs, optimisation des processus et mise en place d’outils collaboratifs.',
+    year: '2018 - 2020',
+    title: 'CONSULTANT IT - EBURNETECH',
+    description: 'Collaboration sur des projets à travers différents langages de programmation et des outils autour d\'office 365, Developpement du site web de la COP 15',
   },
 ];
