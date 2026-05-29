@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
   template: `
-    <header class="navbar">
-      <a class="brand" href="#top">
+    <header class="navbar" [class.menu-open]="mobileMenuOpen">
+      <a class="brand" href="#top" (click)="closeMenu()">
         @if (!photoUnavailable) {
           <img class="brand-photo" src="assets/images/claude.jpeg" alt="Photo de Claude N'DJA" (error)="photoUnavailable = true" />
         } @else {
@@ -17,16 +17,37 @@ import { Component } from '@angular/core';
         </span>
       </a>
 
-      <nav>
-        <a href="#about">Profil</a>
-        <a href="#skills">Compétences</a>
-        <a href="#projects">Réalisations</a>
-        <a href="#experience">CV</a>
-        <a class="nav-cta" href="#contact">Contact</a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Ouvrir le menu"
+        [attr.aria-expanded]="mobileMenuOpen"
+        (click)="toggleMenu()"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav [class.open]="mobileMenuOpen">
+        <a href="#about" (click)="closeMenu()">Profil</a>
+        <a href="#skills" (click)="closeMenu()">Compétences</a>
+        <a href="#projects" (click)="closeMenu()">Réalisations</a>
+        <a href="#experience" (click)="closeMenu()">CV</a>
+        <a class="nav-cta" href="#contact" (click)="closeMenu()">Contact</a>
       </nav>
     </header>
   `,
 })
 export class NavbarComponent {
   photoUnavailable = false;
+  mobileMenuOpen = false;
+
+  toggleMenu() {
+    this.mobileMenuOpen = !this.mobileMenuOpen;
+  }
+
+  closeMenu() {
+    this.mobileMenuOpen = false;
+  }
 }

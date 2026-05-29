@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { projects } from '../../../../core/data/portfolio.data';
 
@@ -43,5 +43,6 @@ import { projects } from '../../../../core/data/portfolio.data';
   `,
 })
 export class ProjectsComponent {
-  projects = projects;
+  projects = projects.slice(0, 3);
 }
+
